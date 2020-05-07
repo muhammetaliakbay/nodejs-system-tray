@@ -1,0 +1,28 @@
+{
+  "name": "@muhammetaliakbay/nodejs-system-tray",
+  "version": "1.0.0",
+  "description": "A system tray notification icon adapter for nodejs",
+  "main": "./dist/system-tray.js",
+  "types": "./dist/system-tray.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist && rimraf ./build",
+    "build": "(npm run clean) && (tsc) && (node-gyp rebuild)",
+    "install": "(npm run build)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNU3",
+  "gypfile": true,
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "node-gyp": "^6.1.0",
+    "node-loader": "^0.6.0",
+    "typescript": "^3.8.3",
+    "rimraf": "^3.0.2",
+    "node-addon-api": "^3.0.0"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0"
+  }
+}
